@@ -5,21 +5,22 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-<%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
-<%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
-
-<f:view>
-    <html>
-        <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-            <title>JSP Page</title>
-        </head>
-        <body>
-            <h1><h:outputText value="Hello World!"/></h1>
-        </body>
-    </html>
-</f:view>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h2>Login</h2>
+        <form method="post" action="login">
+            <label>Username: </label>
+            <input type="text" name="username" value="">
+            <br>
+            <lable>Password:</lable>
+            <input type="password" name="password" value=""><br>
+            <input type="submit" name="login" value="Log in">
+        </form>
+        <p>${message}</p>
+    </body>
+</html>
